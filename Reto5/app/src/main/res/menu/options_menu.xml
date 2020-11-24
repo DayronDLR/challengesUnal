@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AndroidTicTacToeActivity"
+
+    >
+    <item android:title="MENU"
+        app:showAsAction="always">
+<menu >
+    <item android:id="@+id/new_game"
+        android:title="New Game"
+        android:icon="@drawable/new_game"
+        android:orderInCategory="100"
+        />
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"
+        android:orderInCategory="100"
+        />
+    <item android:id="@+id/reset_scores"
+        android:title="Reset Scores"
+        android:icon="@drawable/restore"
+        app:showAsAction="withText"
+        android:orderInCategory="100"
+        />
+    <item android:id="@+id/about"
+        android:title="About"
+        android:icon="@drawable/about"
+        android:orderInCategory="100"
+        />
+</menu>
+    </item>
+</menu>

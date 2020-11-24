@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tic-Tac-Toe</string>
+    <string name="first_human" translatable="false">Tu primero</string>
+    <string name="first_android" translatable="false">android primero</string>
+    <string name="turn_human" translatable="false">Tu turno</string>
+    <string name="turn_computer" translatable="false">Turno de Android</string>
+    <string name="result_tie" translatable="false">Empate</string>
+    <string name="result_human_wins" translatable="false">Ganaste</string>
+    <string name="result_computer_wins" translatable="false">Android Gana!</string>
+</resources>
