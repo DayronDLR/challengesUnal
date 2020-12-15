@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewCrud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        app:cardBackgroundColor="@color/gray_firebase"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="100dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgCrudCategory"
+                android:layout_width="150dp"
+                android:layout_height="161dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                tools:src="@drawable/icon_firebase" />
+
+            <TextView
+                android:id="@+id/txtNameUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/imgCrudCategory"
+                android:text="Name:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                />
+
+            <EditText
+                android:id="@+id/etxtNameCrudCategory"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txtNameUpload"
+                android:textSize="15dp"
+                android:layout_alignBottom="@+id/txtNameUpload"
+                />
+
+            <TextView
+                android:id="@+id/txtIdUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/imgCrudCategory"
+                android:text="Id:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="50dp"
+                />
+
+            <EditText
+                android:id="@+id/etxtIdCrudCategory"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtIdUpload"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/txtIdUpload"
+
+                android:textSize="15dp" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatUpdateCrudCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btnUpdateCrudCategory"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="13dp"
+                android:layout_toRightOf="@+id/btnUpdateCrudCategory"
+                android:clickable="true"
+                android:src="@drawable/update"
+                app:backgroundTint="@color/azul_firebase"
+                app:rippleColor="@color/teal_700" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatCrudCategoryDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btnUpdateCrudCategory"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/floatUpdateCrudCategory"
+                android:clickable="true"
+                android:src="@drawable/delete"
+                app:backgroundTint="@color/orange_firebase"
+                app:rippleColor="@android:color/holo_red_light"/>
+
+            <Button
+                android:id="@+id/btnUpdateCrudCategory"
+                android:layout_width="148dp"
+                android:layout_height="38dp"
+                android:layout_below="@+id/imgCrudCategory"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/azul_marino_firebase"
+                android:text="Update image"
+                android:textSize="10dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

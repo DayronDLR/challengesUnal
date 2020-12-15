@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "76036857280",
+    "firebase_url": "https://tiendabd-b8c13-default-rtdb.firebaseio.com",
+    "project_id": "tiendabd-b8c13",
+    "storage_bucket": "tiendabd-b8c13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76036857280:android:944a3f9a9f3bbf94d77c25",
+        "android_client_info": {
+          "package_name": "co.edu.unal.tiendabd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76036857280-vp1i1ddg0u7er6irbn568e7r88157adg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaQVHz2HCaGDeKImZTdjYHWsYYpc3soXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76036857280-vp1i1ddg0u7er6irbn568e7r88157adg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView android:id="@+id/cardviewProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/gray_firebase"
+    app:cardElevation="100dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgCardViewProduct"
+                android:layout_width="106dp"
+                android:layout_height="117dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="visible"
+                tools:src="@drawable/icon_firebase" />
+            <TextView
+                android:id="@+id/txtCategoryProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:layout_toRightOf="@+id/imgCardViewProduct"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"/>
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:layout_below="@+id/txtCategoryProduct"
+                android:layout_toRightOf="@+id/imgCardViewProduct"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txtNameValueProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_toRightOf="@id/txtName"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+               android:layout_alignBottom="@id/txtName"/>
+            <TextView
+                android:id="@+id/txtId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id:"
+                android:layout_toRightOf="@id/imgCardViewProduct"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txtName"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txtIdValueProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_toRightOf="@id/txtId"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignBottom="@+id/txtId"
+                />
+
+            <TextView
+                android:id="@+id/txtAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Availability:"
+                android:layout_toRightOf="@id/imgCardViewProduct"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txtId"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/txtAvailabilityValueProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_toRightOf="@id/txtAvailability"
+                android:textSize="15dp"
+                android:layout_alignBottom="@+id/txtAvailability"
+
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>

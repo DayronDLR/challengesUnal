@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_list_categories">
+
+    <fragment
+        android:id="@+id/nav_list_products"
+        android:name="co.edu.unal.tiendabd.ui.fragments.ListFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_list_products"
+
+        />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="co.edu.unal.tiendabd.ui.fragments.CategoryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_add_category" />
+
+    <fragment
+        android:id="@+id/nav_products"
+        android:name="co.edu.unal.tiendabd.ui.fragments.ProductFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_add_product" />
+
+    <fragment
+        android:id="@+id/nav_list_categories"
+        android:name="co.edu.unal.tiendabd.ui.fragments.ListCategories"
+        android:label="List Categories"
+        tools:layout="@layout/fragment_list_products"
+
+        />
+
+</navigation>

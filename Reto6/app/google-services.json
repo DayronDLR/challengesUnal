@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "894697818418",
+    "project_id": "tic-tac-toe-b9dc0",
+    "storage_bucket": "tic-tac-toe-b9dc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894697818418:android:1ffb1021fb3347fc49af2b",
+        "android_client_info": {
+          "package_name": "co.edu.unal.androidtic_tac_toe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894697818418-bs0n3coau79qv23m5eahha1ngogaic7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFWw05FWVTJ9ClUUMy0JhPoUQIefkRNv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894697818418-bs0n3coau79qv23m5eahha1ngogaic7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.ListFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewCrudProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        app:cardBackgroundColor="@color/gray_firebase"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="100dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgCrudProduct"
+                android:layout_width="150dp"
+                android:layout_height="161dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                tools:src="@tools:sample/avatars" />
+
+            <Spinner
+                android:id="@+id/spinnerCrud"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/imgCrudProduct"
+                android:textDirection="rtl"
+                />
+
+            <TextView
+                android:id="@+id/txtNameUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerCrud"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/imgCrudProduct"
+                android:text="Name:"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etxtCrudName"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerCrud"
+
+                android:layout_toRightOf="@id/txtNameUpload"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtIdUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNameUpload"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/imgCrudProduct"
+                android:text="Id:"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etxtCrudId"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etxtCrudName"
+
+                android:layout_toRightOf="@id/txtIdUpload"
+
+
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtAvailabilityUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtIdUpload"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/imgCrudProduct"
+                android:text="Availability:"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etxtCrudAva"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etxtCrudId"
+
+                android:layout_toRightOf="@id/txtAvailabilityUpload"
+                android:textSize="15dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatCrudProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAvailabilityUpload"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/btnCrudProduct"
+                android:clickable="true"
+                android:src="@drawable/update"
+                app:backgroundTint="@color/azul_firebase"
+                app:rippleColor="@color/teal_700" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatCrudProductDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAvailabilityUpload"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/floatCrudProduct"
+                android:clickable="true"
+                android:src="@drawable/delete"
+                app:backgroundTint="@color/orange_firebase"
+                app:rippleColor="@android:color/holo_red_light"/>
+
+            <Button
+                android:id="@+id/btnCrudProduct"
+                android:layout_width="148dp"
+                android:layout_height="38dp"
+                android:layout_below="@+id/imgCrudProduct"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/azul_marino_firebase"
+                android:text="Update image"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
